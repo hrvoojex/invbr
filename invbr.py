@@ -18,4 +18,4 @@ for line in data:
     else:
         line.append((str(''.join(chr(ord('0')) for i in xrange(10 - len(str(count)))))) + str(count))
     count += 1
-    print line
+    print '{0:10s} {1:20s}'.format(line[0], line[1])
